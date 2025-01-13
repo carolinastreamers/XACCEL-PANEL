@@ -1,0 +1,32 @@
+Fresh Install on Ubuntu 20 & 22
+
+Xaccel-Codecs 5.1.34
+
+Run these commands in putty
+
+apt-get update
+apt-get install systemd build-essential libdrm2 net-tools pciutils libxext* libxfixes* libpciaccess* linux-headers-`uname -r` -y
+apt-get purge nvidia-* -y
+apt-get autoremove -y
+
+echo "blacklist nouveau" > /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+echo "options nouveau modeset=0" >> /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+update-initramfs -u
+reboot
+
+service lightdm stop
+nvidia-uninstall --silent
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/535.171.04/NVIDIA-Linux-x86_64-535.171.04.run
+bash ./NVIDIA-Linux-x86_64-535.171.04.run --silent --install-libglvnd
+
+wget http://ftp.xaccel-codec.com/releases/xaccel-codec-5.1.34.sh
+
+bash ./xaccel-codec-5.1.34.sh -i
+
+DONE-------------------------------------------------------------------------------------------------------
+
+Open the browser and enter http://server for login to the panel. The default username and password are: admin. Then you can go to the Servers > Manage Servers tab, 
+click the  icon at settings column for open the license page, and activate the license key. (website for key purchase  https://www.xaccel-codec.com/)
+username and password are admin
+
+will need to purchase a license.  Well worth the money and with all the others going around i see keys and stuff getting stolen using some of these files going around.  This is The latest as of today 1-3-25
