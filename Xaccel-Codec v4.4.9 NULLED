@@ -4,7 +4,8 @@ Upload file "xaccel-codec-4.4.9.sh" in /home/
 FILE DOWNLOAD LINK
 http://ftp.xaccel-codec.com/releases/xaccel-codec-4.4.9.sh
 
-
+NOW OPEN PUTTY THEN FOLLOW COMMANDS
+cd /home
 STEP 2: Install dependencies
 apt-get update
 apt-get install systemd libdrm2 libxext* libxfixes* libpciaccess* -y
