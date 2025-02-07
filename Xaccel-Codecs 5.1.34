@@ -1,6 +1,6 @@
 Fresh Install on Ubuntu 22
 
-Xaccel-Codecs 5.1.34
+Xaccel-Codecs 5.2.5
 
 Run these commands in putty
 
@@ -19,9 +19,9 @@ nvidia-uninstall --silent
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/535.171.04/NVIDIA-Linux-x86_64-535.171.04.run
 bash ./NVIDIA-Linux-x86_64-535.171.04.run --silent --install-libglvnd
 
-wget http://ftp.xaccel-codec.com/releases/xaccel-codec-5.1.34.sh
+wget http://ftp.xaccel-codec.com/releases/xaccel-codec-5.2.5.sh
 
-bash ./xaccel-codec-5.1.34.sh -i
+bash ./xaccel-codec-5.2.5.sh -i
 
 DONE-------------------------------------------------------------------------------------------------------
 
